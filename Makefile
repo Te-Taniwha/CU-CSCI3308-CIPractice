@@ -10,6 +10,7 @@ PKG_MATH_LIBS = -lm
 PKG_CHECK_LIBS = `pkg-config --libs check`
 
 .PHONY: all dep clean
+.PHONY: test dep geometry_test
 
 all: geometry_test
 
@@ -29,3 +30,5 @@ clean:
 	$(RM) *.o
 	$(RM) geometry_test
 	$(RM) *~
+	
+test:	geometry_test
