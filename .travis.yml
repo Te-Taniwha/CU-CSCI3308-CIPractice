@@ -1,4 +1,4 @@
 language: c
 before_install: make dep
-scipt: make clean && make test && ./geometry_test
+scipt: make clean && make test
 sudo: required
