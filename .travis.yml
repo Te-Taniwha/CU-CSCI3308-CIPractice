@@ -1,4 +1,4 @@
 language: c
 before_install: sudo apt-get install check
-scipt: make clean && make test
+scipt: make clean && make
 sudo: required
